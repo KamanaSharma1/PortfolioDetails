@@ -109,7 +109,7 @@ p{
 .title-box {
   margin-bottom: 3rem;
 }
-.title-box h2 span, .hero-title h1 span, #contact .title-box-2 h5 span{
+.title-box h2 span, #hero .hero-title span, #contact .title-box-2 h5 span{
   color: var(--text-green);
 }
 
