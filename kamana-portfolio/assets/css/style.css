@@ -102,11 +102,11 @@ p{
 .title-box {
   margin-bottom: 3rem;
 }
-.title-box h2 span{
+.title-box h2 span, .hero-title h1 span, #contact .title-box-2 h5 span{
   color: var(--text-green);
 }
 
-.title-box h2 span{
+body.light .title-box h2 span, body.light .hero-title h1 span, body.light #contact .title-box-2 h5 span{
   color: var(--light-pink);
 }
 
