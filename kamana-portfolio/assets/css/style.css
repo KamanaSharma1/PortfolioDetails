@@ -102,7 +102,13 @@ p{
 .title-box {
   margin-bottom: 3rem;
 }
+.title-box h2 span{
+  color: var(--text-green);
+}
 
+.title-box h2 span{
+  color: var(--light-pink);
+}
 
 .subtitle-a {
   text-decoration: var(--text-decoration);
