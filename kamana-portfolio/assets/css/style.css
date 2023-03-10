@@ -113,7 +113,7 @@ p{
   color: var(--text-green);
 }
 
-body.light .title-box h2 span, body.light .hero-title h1 span, body.light #contact .title-box-2 h5 span{
+body.light .title-box h2 span, body.light #hero .hero-title span, body.light #contact .title-box-2 h5 span{
   color: var(--light-pink);
 }
 
@@ -257,7 +257,9 @@ body.light .list-ico span {
   border-radius: 50px;
   transition: all 0.4s;
 }
-
+body.light .back-to-top{
+  background-color: var(--bg-pink);
+}
 .back-to-top i {
   font-size: 28px;
   color: #fff;
@@ -459,14 +461,20 @@ body.light .btn-5:hover {
     max-height: 50px;
 }
 .logo sub {
-    color: #fff;
+    color: var(--text-green);
     font-size: 15px;
     letter-spacing: 2.5px;
     position: relative;
     top: 0;
-    border: 1px solid #5c5c5c;
+    border: 1px solid #27ae60;
     padding: 5px 10px;
     text-transform: uppercase;
+}
+
+body.light .logo sub {
+    color: var(--light-pink);
+    border-color: var(--boder-color-pink);
+
 }
 #header.header-scrolled {
   background: rgba(0, 0, 0, 0.9);
@@ -526,7 +534,7 @@ body.light {
 body.light #header.header-scrolled, body.light .bg-darkgray, body.light .service-box, body.light .contact-info {
     background: var(--bg-white) !important;
 }
-body.light #header .logo sub, body.light #header nav ul li a, body.light .about-me h2, 
+body.light #header nav ul li a, body.light .about-me h2, 
 body.light p, body.light .service-box p, body.light .service-box h3, body.light .bg-darkgray h2, body.light .bg-darkgray .subtitle-a, 
 body.light .contact-info h5, body.light .contact-info ul li, body.light .contact-info ul li a{
     color: var(--darkgray-color) !important;
@@ -975,10 +983,6 @@ body.light .about-image:after{
     margin-top: 20px;
 }
 
-body.light .about-info {
-
-    border-color:var(--boder-color-pink);
-}
 .about-info p:after {
     position: absolute;
     content: '';
@@ -993,7 +997,8 @@ body.light .about-info {
     -o-transform: rotate(45deg);
 }
 
-body.light .about-info p:after, body.light .title-left:before,  body.light .line-mf {
+body.light .about-info p:after, body.light .title-left:before,  body.light .line-mf, body.light .container_menu_iso .menu_iso li a.is-checked, 
+body.light .container_menu_iso .menu_iso li a:hover {
   background:var(--bg-pink);
 }
 
@@ -1030,15 +1035,15 @@ body.light .about-info p:after, body.light .title-left:before,  body.light .line
     background-position:var(--bg-center);
 }
 .service-box {
-    background-color: #2a2e35;
+    background-color:var(--bg-darkgray);
     padding: 2.5rem 1.3rem;
     border-radius: 1rem;
     margin-bottom: 55PX;
-    border-left: 3px solid #2a2e35;
-    border-bottom: 3px solid #2a2e35;
+    border-left: 2px solid #191d2b;
+    border-bottom: 2px solid #191d2b;
     text-align: center;
-    border-right: 2px solid #2a2e35;
-    border-top: 2px solid #2a2e35;
+    border-right: 2px solid #191d2b;
+    border-top: 2px solid #191d2b;
     -webkit-transition: all 0.5s;
     -moz-transition: all 0.5s;
     -o-transition: all 0.5s;
@@ -1128,7 +1133,7 @@ body-light .service-box:hover .ico-circle {
 # Education and Experinece
 --------------------------------------------------------------*/
 #history .card {
-    border: 3px solid #2a2e35;
+    border: 2px solid #2a2e35;
     border-radius: 3px;
     padding: 20px;
     background: #2a2e35;
@@ -1136,6 +1141,10 @@ body-light .service-box:hover .ico-circle {
     -moz-transition: all 0.5s;
     -o-transition: all 0.5s;
     transition: all 0.5s;
+}
+body.light #history .card {
+    border-color: #cdcdcd;
+    background: #ededed;
 }
 .exp-sec .card.shadow {
     background: #232222;
@@ -1145,6 +1154,10 @@ body-light .service-box:hover .ico-circle {
 #history .card h4 {
     font-size: 18px;
     line-height: normal;
+    font-weight: 700;
+}
+body.light #history .card  h4{
+  color: var(--darkgray-color) !important;
 }
 #history .badge {
     transform: rotate(45deg);
@@ -1399,7 +1412,12 @@ body.light #history .col{
 
 /* On hover, the overlay text will "zoom" in display */
 .img_iso:hover .overlay {
-  transform: scale(1);
+    transform: scale(1);
+    background-color: rgb(39, 174, 96, .6);
+}
+
+body.light .img_iso:hover .overlay{
+    background-color:rgb(245, 101, 146, .6);
 }
 
 /* Some text inside the overlay, which is positioned in the middle vertically and horizontally */
