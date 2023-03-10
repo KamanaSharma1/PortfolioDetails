@@ -1469,4 +1469,7 @@ footer .credits a {
 .hero .hero-title {
     font-size: 2rem;
 }
+  .navbar>ul li:last-child {
+    display: none;
+}
 }
