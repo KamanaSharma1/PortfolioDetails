@@ -477,7 +477,9 @@ body.light {
   opacity: 0;
   position: absolute;
 }
-
+span.mobile-view {
+    display: none;
+}
 #header .label {
     width: 50px;
     height: 24px;
@@ -697,14 +699,16 @@ background-color: var(--bg-pink);
 * Mobile Navigation 
 */
 .mobile-nav-toggle {
-  color: #fff;
+  color: var(--text-green);
   font-size: 28px;
   cursor: pointer;
   display: none;
   line-height: 0;
   transition: 0.5s;
 }
-
+body.light .mobile-nav-toggle{
+  color: var(--light-pink);
+}
 @media (max-width: 991px) {
   .mobile-nav-toggle {
     display: block;
@@ -1552,5 +1556,8 @@ footer .credits a {
 }   
 .hero .hero-title {
     font-size: 2rem;
+}
+.desktop-view{
+  display: none;
 }
 }
