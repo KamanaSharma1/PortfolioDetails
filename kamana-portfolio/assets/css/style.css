@@ -1561,4 +1561,7 @@ footer .credits a {
 .hero .hero-title {
     font-size: 2rem;
 }
+        .desktop-view{
+        display:none;
+        }
 }
