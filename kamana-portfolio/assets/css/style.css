@@ -1564,4 +1564,7 @@ footer .credits a {
         .desktop-view{
         display:none;
         }
+        body.light .mobile-nav-toggle{
+        color:#f56692 !important;
+        }
 }
