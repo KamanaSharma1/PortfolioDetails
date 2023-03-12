@@ -1,7 +1,8 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300&display=swap');
 :root {
         --text-green: #27ae60;
         --bg-darkgray: #191D2B;
@@ -11,7 +12,7 @@
         --text-decoration: none;
         --bg-fixed:fixed;
         --bg-center:center center;
-        --font-family:'Open Sans', sans-serif;
+        --font-poppins:'Poppins', sans-serif;
         --darkgray-color:#4e4e4e;
         --overflow-x: hidden;
         --box-sizing:border-box;
@@ -23,9 +24,12 @@
 *{
     box-sizing: var(--box-sizing);
 }
+h1, h2, h3, h4, h5, h6{
+font-family: 'Raleway', sans-serif;
+}
 body {
     color: var(--darkgray-color);
-    font-family: var(--font-family);
+    font-family: var(--font-poppins);
     overflow-x: var(--overflow-x);
     transition: background 0.2s linear;
 }
@@ -107,7 +111,7 @@ p{
 
 /*--/ Title A /--*/
 .title-box {
-  margin-bottom: 3rem;
+  margin-bottom:2.5rem;
 }
 .title-box h2 span, #hero .hero-title span, #contact .title-box-2 h5 span{
   color: var(--text-green);
@@ -134,9 +138,10 @@ body.light .title-box h2 span, body.light #hero .hero-title span, body.light #co
   margin-bottom: 3rem;
 }
 
-.title-left {
-  font-size: 2rem;
-  position: relative;
+.title-box h2 {
+    font-size: 2.6rem;
+    position: relative;
+    font-weight: 900;
 }
 
 .title-left:before {
@@ -848,7 +853,7 @@ background-color: var(--bg-pink);
 
 .hero .hero-title {
   color: #fff;
-  font-weight: 600;
+  font-weight: 900;
   font-size: 3rem;
 }
 .hero .table-cell {
@@ -869,7 +874,8 @@ background-color: var(--bg-pink);
 @media (min-width: 768px) {
   .hero .hero-title {
     font-size: 4rem;
-  }
+    line-height: normal;
+}
 }
 
 .hero .hero-subtitle {
@@ -1097,7 +1103,7 @@ body-light .service-box:hover .ico-circle {
 }
 
 .service-box .s-description {
-    font-weight: 500;
+    font-weight: 300;
         font-size: 15px;
 }
 #services .ico-circle {
@@ -1161,11 +1167,12 @@ body.light #history .card  h4{
 }
 #history .badge {
     transform: rotate(45deg);
-     -webkit-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
     -o-transform: rotate(45deg);
-    border: 2px solid #ffff !important;
-        background: #27ae60 !important;
+    border: 2px solid #2a2e35!important;
+    background: #27ae60 !important;
+    color: #2a2e35;
 }
 
 body.light #history .badge {
@@ -1255,7 +1262,7 @@ body.light #history .col{
     -ms-border-radius: 3px;
     -o-border-radius: 3px;
     background: #fff;
-    font-family: 'Open Sans';
+    font-family: var(--font-family);
         font-weight: 600;
 }
 
@@ -1500,10 +1507,6 @@ body.light .cursor{
     height: 500px;
     object-fit: cover;
     object-position: top;
-    filter: grayscale(1);
-    -moz-filter: grayscale(1);
-    -webkit-filter: grayscale(1);
-    -o-filter: grayscale(1);
 }
 .contact-info {
     background: #191D2B;
