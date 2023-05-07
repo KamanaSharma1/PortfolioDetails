@@ -864,16 +864,31 @@ background-color: var(--bg-pink);
     position: relative;
     z-index: 1;
 }
-.hero:after {
-    position: absolute;
+#hero:before {
     content: '';
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
+    position: absolute;
     right: 0;
-    margin: 0 auto;
-    background: rgba(0, 0, 0, .8);
+    bottom: 0;
+    width: 200px;
+    height: 200px;
+    background-image: url(../../assets/img/dots2.png);
+    background-repeat: repeat;
+    z-index: 1;
+    opacity: .1;
+}
+#hero:after {
+    content: '';
+    position: absolute;
+    right:auto;
+    left: 0px;
+    bottom: auto;
+    top:0px;
+    width: 200px;
+    height: 200px;
+    background-image: url(../../assets/img/dots2.png);
+    background-repeat: repeat;
+    z-index: 1;
+    opacity: .1;
 }
 @media (min-width: 768px) {
   .hero .hero-title {
