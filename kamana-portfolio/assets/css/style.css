@@ -1042,7 +1042,7 @@ body.light .container_menu_iso .menu_iso li a:hover {
   background:var(--bg-pink);
 }
 
-@media (min-width: 991px) {
+@media (max-width: 991px) {
 .about-me {
     margin-top: 150px;
 }
