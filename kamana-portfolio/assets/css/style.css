@@ -396,7 +396,7 @@ body.light .back-to-top{
 
 .btn-5::before,
 .btn-5::after {
-  background: #fff;
+  background: var(--text-green);
   content: '';
   position: absolute;
   z-index: -1;
@@ -855,6 +855,7 @@ background-color: var(--bg-pink);
   color: #fff;
   font-weight: 900;
   font-size: 3rem;
+  background:  transparent !important;
 }
 .hero .table-cell {
     position: relative;
@@ -875,6 +876,7 @@ background-color: var(--bg-pink);
   .hero .hero-title {
     font-size: 4rem;
     line-height: normal;
+
 }
 }
 
