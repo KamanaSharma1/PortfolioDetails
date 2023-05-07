@@ -39,7 +39,9 @@ body {
 .bg-darkgray{
   background-color:  var(--bg-darkgray);
 }
-
+.bg-trasparent{
+  background: transparent;
+}
 a {
  text-decoration:  var(--text-decoration);
   transition: all 0.5s ease-in-out;
