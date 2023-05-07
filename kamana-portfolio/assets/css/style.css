@@ -65,7 +65,7 @@ p {
     background: transparent !IMPORTANT;
     font-size: 16px;
 }
-.bg-image {
+.bg-img {
   background-repeat: var(--bg-no-repeat);
   background-attachment: fixed;
   background-size: var(--bg-cover);
@@ -73,7 +73,7 @@ p {
 }
 
 @media (max-width: 1024px) {
-  .bg-image {
+  .bg-img {
     background-attachment: scroll;
   }
 }
