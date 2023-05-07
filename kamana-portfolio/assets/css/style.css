@@ -941,19 +941,33 @@ background-color: var(--bg-pink);
 .about-image {
     position: relative;
 }
-.about-image img {
+.about-image {
+    width: 75%;
+    margin-left: 25%;
     position: relative;
-    z-index: 1;
-    border-radius: 8px;
-    height: 560px;
-    object-fit: cover;
-    -webkit-user-drag: none;
-    object-position: top;
-    -webkit-transition: all 0.5s;
-    -moz-transition: all 0.5s;
-    -o-transition: all 0.5s;
-    transition: all 0.5s;
+    z-index: 3;
 }
+.about-image:after {
+    content: '';
+    position: absolute;
+    left: -30px;
+    top: 0;
+    width: 8px;
+    height: 150px;
+    background: #c9f31d;
+}
+.about-image:before{
+    content: '';
+    position: absolute;
+    right: -30px;
+    bottom: -30px;
+    width: 200px;
+    height: 200px;
+    background-image: url(../assets/img/dots2.png);
+    background-repeat: repeat;
+    z-index: -1;
+}
+
 .about-image img:hover {
     filter: none;
     -webkit-filter: none;
