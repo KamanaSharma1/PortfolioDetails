@@ -267,13 +267,13 @@ body.light .back-to-top{
 }
 .back-to-top i {
   font-size: 28px;
-  color: #fff;
+  color: #000;
   line-height: 0;
 }
 
 .back-to-top:hover {
-  background: #298eff;
-  color: #fff;
+    background: #ffff;
+    color: #000;
 }
 
 .back-to-top.active {
@@ -402,7 +402,7 @@ body.light .back-to-top{
   z-index: -1;
 }
 .btn-5:hover {
-    color: #fff;
+    color: #000;
     background: var(--text-green);
     border-color: var(--text-green);
 }
@@ -942,8 +942,8 @@ background-color: var(--bg-pink);
     position: relative;
 }
 .about-image {
-    width: 75%;
-    margin-left: 25%;
+    width: 90%;
+    margin-left: 0;
     position: relative;
     z-index: 3;
 }
@@ -1165,6 +1165,9 @@ body-light .service-box:hover .ico-circle {
 body.light #history .card {
     border-color: #cdcdcd;
     background: #ededed;
+}
+body #history .card div {
+    color: #27ae60 !important;
 }
 .exp-sec .card.shadow {
     background: #232222;
