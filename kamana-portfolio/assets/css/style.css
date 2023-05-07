@@ -1232,6 +1232,11 @@ body.light #history .col{
     padding: 0 5px;
     flex: none;
   }
+  .skill-mf .service-box:hover .icon img {
+    filter: grayscale(1) invert(1);
+    -webkit-filter: grayscale(1) invert(1);
+    -moz-filter: grayscale(1) invert(1);
+}
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
