@@ -16,10 +16,10 @@
         --darkgray-color:#4e4e4e;
         --overflow-x: hidden;
         --box-sizing:border-box;
-        -color_white:#fff;
-        --light-pink:#f56692;
-        --boder-color-pink: #f56692;
-        --bg-pink:#f56692;
+        --color_white:#fff;
+        --light-pink:#FF0200;
+        --boder-color-pink:#FF0200;
+        --bg-pink:#FF0200;
     }
 *{
     box-sizing: var(--box-sizing);
