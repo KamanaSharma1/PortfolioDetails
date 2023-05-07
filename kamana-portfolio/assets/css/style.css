@@ -963,7 +963,7 @@ background-color: var(--bg-pink);
     bottom: -30px;
     width: 200px;
     height: 200px;
-    background-image: url(../assets/img/dots2.png);
+    background-image: url(assets/img/dots2.png);
     background-repeat: repeat;
     z-index: -1;
 }
