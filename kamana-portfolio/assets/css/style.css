@@ -1042,6 +1042,16 @@ body.light .container_menu_iso .menu_iso li a:hover {
   background:var(--bg-pink);
 }
 
+@media (min-width: 991px) {
+.about-me {
+    margin-top: 150px;
+}
+.about-mf .container .row .row {
+    display: block;
+}
+}
+
+
 @media (min-width: 767px) {
   .about-mf .box-pl2 {
     margin-top: 3rem;
@@ -1607,12 +1617,7 @@ footer .credits a {
   .footer-paralax, .section-works, .exp-sec, .about-mf, .skill-mf {
     padding: 70px 10px 70px;
 }
-.about-image:after {
-    width: 90%;
-    right: 0;
-    margin: 0 auto;
-    left: 0;
-}
+
 .col {
     flex: none;
 }   
