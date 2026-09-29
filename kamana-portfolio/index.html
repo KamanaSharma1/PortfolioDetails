@@ -1,1012 +1,230 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
   <title>Portfolio</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
-
-  <!-- Favicons -->
   <link href="assets/img/favicon-icon.png" rel="icon">
-
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/aos/css/aos.css" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
-  <link href="assets/fonts/stylesheet.css" rel="stylesheet">
+  <link href="assets/css/style.css?v=4" rel="stylesheet">
 </head>
-
 <body>
+  <div class="progress" aria-hidden="true"></div>
+  <div class="cursor" aria-hidden="true"></div>
 
-  <!-- ======= Hero Section ======= -->
-  <div id="hero" class="hero route bg-image" style="background-image: url(assets/img/banner-image.jpg)">
-    <div class="overlay-itro"></div>
-    <div class="hero-content display-table">
-      <div class="table-cell">
-        <div class="container">
-          <!--<p class="display-6 color-d">Hello, world!</p>-->
-          <h1 class="hero-title mb-3 bg-trasparent">My Name is <span>Kamana</span> Sharma</h1>
-          <p class="mb-2 bg-trasparent">I help to create websites, and grow your business.</p>
-          <p class="hero-subtitle bg-trasparent"><span class="typed" data-typed-items="Website Designer, Freelancer, HTML Developer"></span></p>
-          <p class="pt-0">
-            <a class="btn-5 btn btn-primary px-4 py-2" target="_blank" href="assets/cv/Kamana-CV.pdf" role="button">Download CV</a>
-            <a class="btn-5 btn btn-primary px-4 py-2" href="mailto:kamanabhatt1gmail" role="button">Hire Me</a>
-          </p>
-        </div>
-      </div>
-    </div>
-  </div><!-- End Hero Section -->
-  <!-- ======= Header ======= -->
-  <header id="header" class="">
-    <div class="container d-flex align-items-center justify-content-between">
-       <a href="index.html" class="logo"><!-- <img src="assets/img/logo.png" alt="K logo" class="img-fluid"> --><sub>K-Design</sub></a>
-
-      <nav id="navbar" class="navbar">
+  <header id="header" class="header">
+    <div class="container">
+      <a href="#hero" class="logo" aria-label="Kraft - UI/UX and Frontend">
+        <svg class="logo-mark" viewBox="0 0 38 38" aria-hidden="true"><defs><linearGradient id="lg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#8B70DB"/><stop offset="1" stop-color="#4729A3"/></linearGradient></defs><rect width="38" height="38" rx="11" fill="url(#lg)"/><path d="M13.5 9.5v19M25 10L14.5 19 25 28" fill="none" stroke="#fff" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"/><circle cx="25" cy="10" r="2.6" fill="#29136C" stroke="#fff" stroke-width="1.6"/><circle cx="25" cy="28" r="2.6" fill="#29136C" stroke="#fff" stroke-width="1.6"/></svg>
+        <span class="logo-text"><b>Kraft</b><small>UI/UX &amp; Frontend</small></span>
+      </a>
+      <nav id="navbar" class="nav" aria-label="Main">
         <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto" href="#services">Services</a></li>
-          <li><a class="nav-link scrollto" href="#history">My Background</a></li>
-          <li><a class="nav-link scrollto " href="#skills">Skills</a></li>
-          <li><a class="nav-link scrollto " href="#work">Work</a></li>
-          
-          <!-- <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="#">Drop Down 1</a></li>
-              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
-                  <li><a href="#">Deep Drop Down 4</a></li>
-                  <li><a href="#">Deep Drop Down 5</a></li>
-                </ul>
-              </li>
-              <li><a href="#">Drop Down 2</a></li>
-              <li><a href="#">Drop Down 3</a></li>
-              <li><a href="#">Drop Down 4</a></li>
-            </ul>
-          </li> -->
-
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-          <!-- <li>
-            <span class="desktop-view">
-              <input type="checkbox" class="checkbox" id="checkbox" aria-label="dark mode button">
-              <label for="checkbox" class="label">
-                <i class="bi bi-brightness-high-fill"></i>
-               <i class="bi bi-moon-fill"></i>
-              <div class='ball'></div>
-              <span class="sr-only">Theme Converter</span>
-            </label>
-          </span>
-          </li> -->
-          
+          <li><a href="#hero" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#history">My Background</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
-
-
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
-
+      </nav>
+      <button class="kbd-btn" type="button" data-open-palette aria-label="Open quick navigation"><i class="bi bi-search"></i> Quick nav <kbd>Ctrl K</kbd></button>
+      <a class="btn btn-primary header-cta" href="mailto:kamanawebdesigner@gmail.com">Hire Me</a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="navbar"><i class="bi bi-list"></i></button>
     </div>
-  </header><!-- End Header -->
+  </header>
 
   <main id="main">
-
-    <!-- ======= About Section ======= -->
-    <section id="about" class="bg-darkgray about-mf sect-pt4 route pb-5 pt-5">
+    <section id="hero" class="hero">
+      <div class="bg-fx" aria-hidden="true"><span class="orb o1"></span><span class="orb o2"></span><i class="shape ring"></i><i class="shape ring2"></i><i class="shape plus"></i><i class="shape plus p2"></i><i class="shape sq"></i></div>
       <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="">
-              <div class="row">
-                <div class="col-lg-6 col-md-12 col-sm-12">
-                  <figure class="mb-0 about-image">
-                    <img src="assets/img/about-me1.jpg" class="w-100" alt="profile Image">
-                     <div class="img2"><img src="assets/img/about-img2.jpg" class="w-100" alt="portfolio Image"></div>
-                  </figure>
-                 
-                </div>
-                <div class="col-lg-6 col-md-12 col-sm-12 d-flex align-items-center">
-                  <div class="about-me pt-4 pt-md-0 ">
-                    <div class="title-box">
-                      <h2 class="title-left text-white">
-                        Why you <span>hire</span> me
-                      </h2>
-                    </div>
-                    <p class="lead text-white mb-2">
-                     <strong class="d-block w-100 mb-2">I’m a creative Web Designer/HTML Developer...</strong> with a passion for building responsive and engaging websites. I have a 5+ years experience in web designing. I am highly passionate about my work.  I write clean, well-documented code that’s easy to maintain.
-                    </p>
-                    <p class="lead text-white mb-2">
-                       I’ve worked on multiple websites and web applications. You might be delighted to know that I am proficient in the use of JavaScript, HTML, CSS, Hubspot, Wix, Shopify, WordPress etc. I also worked on Adobe software: Adobe Photoshop, Adobe XD, Figma etc.
-                    </p>
-                    <!-- <p class="lead text-white mb-2">
-                      You are always welcomed to look at my Profile, Portfolio, and Work history for more details about my experience and qualifications. You can contact me 24/7 via email or Skype, any hour.
-                    </p> -->
-
-                    <div class="about-info">
-                        <p class="mb-2 text-white position-relative"><span class="text-blue">Name: </span> <span>Kamana Sharma</span></p>
-                        <p class="mb-2 text-white position-relative"><span class="text-blue">Profile: </span> <span>Website Designer</span></p>
-                        <p class="mb-2 text-white position-relative"><span class="text-blue">Email: </span> <span>kamanawebdesigner@gmail.com</span></p>
-                      </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+        <div>
+          <p class="hero-hello">I am</p>
+          <h1 aria-label="Kamana">Kamana</h1>
+          <p class="hero-lead">I craft modern, accessible, and responsive web experiences to elevate your brand.</p>
+          <p class="hero-role"><span class="typed" data-typed-items="HTML5/CSS3 Specialist, UI/UX Designer, Frontend Developer, React Enthusiast"></span><span class="typed-cursor" aria-hidden="true">|</span></p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" target="_blank" rel="noopener" href="assets/cv/KamanaSharma_CV.pdf"><i class="bi bi-download"></i> Download CV</a>
+            <a class="btn btn-ghost" href="mailto:kamanawebdesigner@gmail.com"><i class="bi bi-envelope"></i> Hire Me</a>
           </div>
         </div>
+        <div class="stage">
+          <div class="layer win" data-depth="10" aria-hidden="true">
+            <div class="win-bar"><i></i><i></i><i></i><span>K-Design</span></div>
+            <img src="assets/img/about-me1.jpg" alt="">
+          </div>
+          <div class="layer chip-toggle" data-depth="26"><button class="chip" type="button" aria-pressed="false" data-inspect><span class="toggle"></span>Inspect</button></div>
+          <div class="layer chip-role" data-depth="34"><div class="chip"><strong>CDAC</strong>Senior Project Engineer</div></div>
+          <div class="layer chip-stat" data-depth="30"><div class="chip"><strong>5+</strong>Years experience</div></div>
+          <div class="layer chip-swatches" data-depth="22"><div class="chip">
+            <button class="sw" data-hex="#29136C" style="background:#29136C" aria-label="Copy #29136C"></button><button class="sw" data-hex="#4729A3" style="background:#4729A3" aria-label="Copy #4729A3"></button><button class="sw" data-hex="#8B70DB" style="background:#8B70DB" aria-label="Copy #8B70DB"></button><button class="sw" data-hex="#BDADEB" style="background:#BDADEB" aria-label="Copy #BDADEB"></button><button class="sw" data-hex="#EEEBFA" style="background:#EEEBFA" aria-label="Copy #EEEBFA"></button>
+          </div></div>
+          <div class="layer pointer" data-depth="0" aria-hidden="true"><svg width="26" height="26" viewBox="0 0 24 24"><path d="M3 2l17 8-7 2-3 8z" fill="#8B70DB" stroke="#fff" stroke-width="1.5" stroke-linejoin="round"/></svg><span>Kamana</span></div>
+          <div class="stage-ctrl"><button class="ctrl" type="button" data-ctrl="hero" aria-pressed="false" aria-label="Pause animations"><i class="bi bi-pause-fill"></i></button><span>Drag the chips. Click a swatch to copy.</span></div>
+        </div>
       </div>
-    </section><!-- End About Section -->
+      <a class="scroll-cue" href="#about" aria-label="Scroll to About"><span></span></a>
+    </section>
 
-    <!-- ======= Services Section ======= -->
-    <section id="services" class="services-mf pt-5 pb-2 route bg-img" style="background-image: url(assets/img/services-banner.jpg);">
+    <section id="about" class="section section-soft">
+      <div class="container about-grid">
+        <div class="about-images reveal">
+          <img class="main" src="assets/img/about-me1.jpg" alt="profile Image">
+          <img class="second" src="assets/img/about-img2.jpg" alt="portfolio Image">
+          <div class="badge" aria-hidden="true"><svg viewBox="0 0 120 120"><defs><path id="bc" d="M60,60 m-44,0 a44,44 0 1,1 88,0 a44,44 0 1,1 -88,0"/></defs><text><textPath href="#bc">UI/UX Designer • Frontend Developer • React Enthusiast •</textPath></text></svg><i class="bi bi-brush"></i></div>
+        </div>
+        <div class="about-text reveal">
+          <h2>Why you hire me</h2>
+          <p><strong>I’m a Senior UI Developer (Senior Project Engineer)...</strong> with over 5 years of experience in designing and developing responsive, user-focused websites and web applications. I create intuitive interfaces and engaging digital experiences that balance creativity and usability.</p>
+          <p>I work with HTML5, CSS3, Bootstrap, and React, and have experience with platforms like WordPress, Shopify, Wix, and HubSpot. I also use Adobe Photoshop to support design tasks and ensure high-quality visual output.</p>
+          <p>I’m passionate about clean, maintainable code and follow best practices to deliver accessible, high-performance interfaces that improve user interaction and satisfaction.</p>
+          <dl class="info-list">
+            <div><dt>Name:</dt><dd>Kamana</dd></div>
+            <div><dt>Profile:</dt><dd>Senior Project Engineer</dd></div>
+            <div><dt>Email:</dt><dd>kamanawebdesigner@gmail.com</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section section-dark">
+      <div class="bg-fx" aria-hidden="true"><span class="orb o1"></span><span class="orb o2"></span><i class="shape ring"></i><i class="shape ring2"></i><i class="shape plus"></i><i class="shape plus p2"></i><i class="shape sq"></i></div>
       <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="title-box text-center">
-              <h2 class="text-white">
-                My <span>Services</span>
-              </h2>
-              <p class="subtitle-a text-white">
-               Believe in being different.
-              </p>
-              <div class="line-mf"></div>
-            </div>
-          </div>
-        </div>
-        <div class="row mt-3">
-          <div class="col-lg-4 col-md-6 col-sm-12 col">
-            <div class="service-box">
-              <div class="service-ico">
-                <span class="ico-circle"><i class="bi bi-pen"></i></span>
-              </div>
-              <div class="service-content">
-                <h3 class="s-title text-white fw-bold">Web Design</h3>
-                <p class="s-description text-center text-white">
-                  Website design is to create a website that strengthens your company’s brand while ensuring ease of use.
-                </p>
-              </div>
-            </div>
-          </div>
-         
-          <div class="col-lg-4 col-md-6 col-sm-12 col">
-            <div class="service-box">
-              <div class="service-ico">
-                <span class="ico-circle"><i class="bi bi-binoculars"></i></span>
-              </div>
-              <div class="service-content">
-                <h3 class="s-title text-white fw-bold">Responsive Design</h3>
-                <p class="s-description text-center text-white">
-                 RWD is a approach that creates dynamic changes to the appearance of a website, depending on the screen size. 
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4 col-md-6 col-sm-12 col">
-            <div class="service-box">
-              <div class="service-ico">
-                <span class="ico-circle"><i class="bi bi-laptop"></i></span>
-              </div>
-              <div class="service-content">
-                <h3 class="s-title text-white fw-bold">Graphic Design</h3>
-                <p class="s-description text-center text-white">
-                  Visual representations used on a Web site to enhance the representation of an idea or feeling.
-                </p>
-              </div>
-            </div>
-          </div>
-
-           <div class="col-lg-4 col-md-6 col-sm-12 col">
-            <div class="service-box">
-              <div class="service-ico">
-                <span class="ico-circle"><i class="bi bi-brightness-high"></i></span>
-              </div>
-              <div class="service-content">
-                <h3 class="s-title text-white fw-bold">Pixel Perfect Design</h3>
-                <p class="s-description text-center text-white">
-                  I design websites and web application individual pixels and give pixel perfect quality assurance
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 col-sm-12 col">
-            <div class="service-box">
-              <div class="service-ico">
-                <span class="ico-circle"><i class="bi bi-speedometer2"></i></span>
-              </div>
-              <div class="service-content">
-                <h3 class="s-title text-white fw-bold">Page Speed Optimization</h3>
-                <p class="s-description text-center text-white">
-                  Page speed optimization measures the amount of time it takes for content on a particular webpage to load
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6 col-sm-12 col">
-            <div class="service-box">
-              <div class="service-ico">
-                <span class="ico-circle"><i class="bi bi-envelope"></i></span>
-              </div>
-              <div class="service-content">
-                <h3 class="s-title text-white fw-bold">Email & PDF Design</h3>
-                <p class="s-description text-center text-white">
-                  Creat high quality PDF and EMail templates. An HTML email template is a pre-defined email layout.</p>
-              </div>
-            </div>
-          </div>
-          
+        <div class="section-head reveal"><h2>My Services</h2></div>
+        <div class="acc reveal">
+          <article class="panel active" tabindex="0"><span class="ico"><i class="bi bi-pen"></i></span><div><h3>Web Design</h3><p>Website design is to create a website that strengthens your company’s brand while ensuring ease of use.</p></div><img class="svc-bg" src="assets/img/services/web-design.svg" alt="" width="800" height="600" loading="lazy"></article>
+          <article class="panel" tabindex="0"><span class="ico"><i class="bi bi-binoculars"></i></span><div><h3>Responsive Design</h3><p>RWD is a approach that creates dynamic changes to the appearance of a website, depending on the screen size.</p></div><img class="svc-bg" src="assets/img/services/responsive-design.svg" alt="" width="800" height="600" loading="lazy"></article>
+          <article class="panel" tabindex="0"><span class="ico"><i class="bi bi-laptop"></i></span><div><h3>Graphic Design</h3><p>Visual representations used on a Web site to enhance the representation of an idea or feeling.</p></div><img class="svc-bg" src="assets/img/services/graphic-design.svg" alt="" width="800" height="600" loading="lazy"></article>
+          <article class="panel" tabindex="0"><span class="ico"><i class="bi bi-brightness-high"></i></span><div><h3>Pixel Perfect Design</h3><p>I design websites and web application individual pixels and give pixel perfect quality assurance</p></div><img class="svc-bg" src="assets/img/services/pixel-perfect-design.svg" alt="" width="800" height="600" loading="lazy"></article>
+          <article class="panel" tabindex="0"><span class="ico"><i class="bi bi-speedometer2"></i></span><div><h3>Page Speed Optimization</h3><p>Page speed optimization measures the amount of time it takes for content on a particular webpage to load</p></div><img class="svc-bg" src="assets/img/services/page-speed-optimization.svg" alt="" width="800" height="600" loading="lazy"></article>
+          <article class="panel" tabindex="0"><span class="ico"><i class="bi bi-envelope"></i></span><div><h3>Email &amp; PDF Design</h3><p>Creat high quality PDF and EMail templates. An HTML email template is a pre-defined email layout.</p></div><img class="svc-bg" src="assets/img/services/email-pdf-design.svg" alt="" width="800" height="600" loading="lazy"></article>
         </div>
       </div>
-    </section><!-- End Services Section -->
+    </section>
 
-    <!-- ======= qualification and Exprience ======= -->
-
-    <div id="history" class="exp-sec bg-darkgray">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-12">
-              <div class="title-box text-center aos-item" data-aos="fade-down">
-                <h2 class="text-white">
-                 Look Back to my <br/><span>Education and Experience</span>
-                </h2>
-                <p class="subtitle-a text-white">
-                  This is my Education and Experience
-                </p>
-                <div class="line-mf"></div>
-              </div>
-            </div>
-        </div>
-          <div class="row">
-            <div class="col-lg-6 col-md-6 col-sm-12">
-              <h3 class="text-white text-center mb-3">Education</h3>
-            <!-- timeline item 1 -->
-            <div class="row">
-                <!-- timeline item 1 left dot -->
-                <div class="col-auto text-center flex-column d-none d-sm-flex">
-                    <div class="row h-50">
-                        <div class="col">&nbsp;</div>
-                        <div class="col">&nbsp;</div>
-                    </div>
-                    <h5 class="m-2">
-                        <span class="badge bg-primary border shadow-sm"><strong>1</strong></span>
-                    </h5>
-                    <div class="row h-50">
-                        <div class="col border-end border-primary">&nbsp;</div>
-                        <div class="col">&nbsp;</div>
-                    </div>
-                </div>
-                <!-- timeline item 1 event content -->
-                
-                <div class="col py-2">
-                    <div class="card shadow">
-                        <div class="card-body p-0">
-                            <div class="float-left text-muted">2014-2016</div>
-                            <div class="float-left text-muted fw-bold">Master of Computer Application (MCA)</div>
-                            <h4 class="card-title text-white mt-2">Emax Group of institution Ambala Cantt Haryana</h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--/row-->
-            <!-- timeline item 2 -->
-            <div class="row">
-                <div class="col-auto text-center flex-column d-none d-sm-flex">
-                    <div class="row h-50">
-                        <div class="col border-end border-primary">&nbsp;</div>
-                        <div class="col">&nbsp;</div>
-                    </div>
-                    <h5 class="m-2">
-                        <span class="badge bg-primary border shadow-sm"><strong>2</strong></span>
-                    </h5>
-                    <div class="row h-50">
-                        <div class="col border-end border-primary">&nbsp;</div>
-                        <div class="col">&nbsp;</div>
-                    </div>
-                </div>
-               <div class="col py-2">
-                    <div class="card shadow">
-                        <div class="card-body p-0">
-                            <div class="float-left text-muted">2011-2014</div>
-                            <div class="float-left text-muted fw-bold">Bachelor of Computer Application</div>
-                            <h4 class="card-title text-white mt-2"> ITFT Collage Chandigarh</h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--/row-->
-
-             <!-- timeline item 3 -->
-            <div class="row">
-                <div class="col-auto text-center flex-column d-none d-sm-flex">
-                    <div class="row h-50">
-                        <div class="col border-end border-primary">&nbsp;</div>
-                        <div class="col">&nbsp;</div>
-                    </div>
-                    <h5 class="m-2">
-                        <span class="badge bg-primary border shadow-sm"><strong>3</strong></span>
-                    </h5>
-                    <div class="row h-50">
-                        <div class="col border-end border-primary">&nbsp;</div>
-                        <div class="col">&nbsp;</div>
-                    </div>
-                </div>
-               <div class="col py-2">
-                    <div class="card shadow">
-                        <div class="card-body p-0">
-                            <div class="float-left text-muted fw-bold">2008-2010</div>
-                            <div class="float-left text-muted fw-bold">GSSS Tang Narwana</div>
-                            <h4 class="card-title text-white mt-2">10+2 Non Medical</h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--/row-->
-
-             <!-- timeline item 4 -->
-            <div class="row">
-                <div class="col-auto text-center flex-column d-none d-sm-flex">
-                    <div class="row h-50">
-                        <div class="col border-end border-primary">&nbsp;</div>
-                        <div class="col">&nbsp;</div>
-                    </div>
-                    <h5 class="m-2">
-                        <span class="badge bg-primary border shadow-sm"><strong>4</strong></span>
-                    </h5>
-                    <div class="row h-50">
-                        <div class="col border-end border-primary">&nbsp;</div>
-                        <div class="col">&nbsp;</div>
-                    </div>
-                </div>
-               <div class="col py-2">
-                    <div class="card shadow">
-                        <div class="card-body p-0">
-                            <div class="float-left text-muted fw-bold">2003-2007</div>
-                            <div class="float-left text-muted fw-bold">GHS Jadrangal</div>
-                            <h4 class="card-title text-white mt-2">10<sup>th</sup></h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--/row-->
-            
-          </div><!--end col1-->
-
-          <div class="col-lg-6 col-md-6 col-sm-12 aos-item" data-aos="fade-up">
-            <h3 class="text-white text-center mb-3">Experience</h3>
-            <!-- timeline item 1 -->
-            <div class="row">
-                <!-- timeline item 1 left dot -->
-                <div class="col-auto text-center flex-column d-none d-sm-flex">
-                    <div class="row h-50">
-                        <div class="col">&nbsp;</div>
-                        <div class="col">&nbsp;</div>
-                    </div>
-                    <h5 class="m-2">
-                        <span class="badge bg-primary border shadow-sm"><strong>1</strong></span>
-                    </h5>
-                    <div class="row h-50">
-                        <div class="col border-end border-primary">&nbsp;</div>
-                        <div class="col">&nbsp;</div>
-                    </div>
-                </div>
-                <!-- timeline item 1 event content -->
-                <div class="col py-2">
-                    <div class="card shadow">
-                        <div class="card-body p-0">
-                            <div class="float-left text-muted">Apirl 2022-Present</div>
-                            <div class="float-left text-muted fw-bold">CDAC Noida</div>
-                            <h4 class="card-title text-white mt-2">Project Engineer</h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--/row-->
-            <!-- timeline item 2 -->
-            <div class="row">
-                <div class="col-auto text-center flex-column d-none d-sm-flex">
-                    <div class="row h-50">
-                        <div class="col border-end border-primary">&nbsp;</div>
-                        <div class="col">&nbsp;</div>
-                    </div>
-                    <h5 class="m-2">
-                        <span class="badge bg-primary border shadow-sm"><strong>2</strong></span>
-                    </h5>
-                    <div class="row h-50">
-                        <div class="col border-end border-primary">&nbsp;</div>
-                        <div class="col">&nbsp;</div>
-                    </div>
-                </div>
-                <div class="col py-2">
-                    <div class="card shadow">
-                        <div class="card-body p-0">
-                            <div class="float-left text-muted">Sept. 2018-March 2022</div>
-                            <div class="float-left text-muted fw-bold">Webutopian Technology Private Limited</div>
-                            <h4 class="card-title text-white mt-2">Senior Website/HTML Designer</h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--/row-->
-
-            <!-- timeline item 3 -->
-            <div class="row">
-                <div class="col-auto text-center flex-column d-none d-sm-flex">
-                    <div class="row h-50">
-                        <div class="col border-end border-primary">&nbsp;</div>
-                        <div class="col">&nbsp;</div>
-                    </div>
-                    <h5 class="m-2">
-                        <span class="badge bg-primary border shadow-sm"><strong>3</strong></span>
-                    </h5>
-                    <div class="row h-50">
-                        <div class="col border-end border-primary">&nbsp;</div>
-                        <div class="col">&nbsp;</div>
-                    </div>
-                </div>
-                <div class="col py-2">
-                    <div class="card shadow">
-                        <div class="card-body p-0">
-                            <div class="float-left text-muted">April 2018-Sept 2018</div>
-                            <div class="float-left text-muted fw-bold">Auspicious Soft Private Limited</div>
-                            <h4 class="card-title text-white mt-2">Senior Website/HTML Designer</h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--/row-->
-            <!-- timeline item 2 -->
-            <div class="row">
-                <div class="col-auto text-center flex-column d-none d-sm-flex">
-                    <div class="row h-50">
-                        <div class="col border-end border-primary">&nbsp;</div>
-                        <div class="col">&nbsp;</div>
-                    </div>
-                    <h5 class="m-2">
-                        <span class="badge bg-primary border shadow-sm"><strong>4</strong></span>
-                    </h5>
-                    <div class="row h-50">
-                        <div class="col border-end border-primary">&nbsp;</div>
-                        <div class="col">&nbsp;</div>
-                    </div>
-                </div>
-                <div class="col py-2">
-                    <div class="card shadow">
-                        <div class="card-body p-0">
-                            <div class="float-left text-muted">Nov. 2016-March 2022</div>
-                            <div class="float-left text-muted fw-bold">Matrix Infologics Private Limited</div>
-                            <h4 class="card-title text-white mt-2">Junior Website/Graphic Designer</h4>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!--/row-->
-
-          </div>
-
-          </div><!--main end row-->
-        </div>
-        <!--container-->
-    </div> <!-- End Section -->
-
-       <!-- ======= Skills Section ======= -->
-    <section id="skills" class="skill-mf route bg-img" style="background-image: url(assets/img/services-banner.jpg);">
+    <section id="history" class="section">
       <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="title-box text-center">
-              <h2 class="text-white">
-                My <span>Skills</span>
-              </h2>
-              <p class="subtitle-a text-white">
-             I have experience with these Technologies
-              </p>
-              <div class="line-mf"></div>
+        <div class="section-head reveal"><h2>Look Back to my Education and Experience</h2></div>
+        <div class="reveal">
+          <div class="tl-bar">
+            <div class="tabs" role="tablist">
+              <button class="tab" role="tab" id="tab-exp" aria-selected="true" aria-controls="exp">Experience</button>
+              <button class="tab" role="tab" id="tab-edu" aria-selected="false" aria-controls="edu">Education</button>
+            </div>
+            <div class="tl-nav" aria-label="Scroll timeline">
+              <button class="tl-btn" type="button" data-tl="-1" aria-label="Previous"><i class="bi bi-arrow-left"></i></button>
+              <button class="tl-btn" type="button" data-tl="1" aria-label="Next"><i class="bi bi-arrow-right"></i></button>
             </div>
           </div>
-        </div>
-        <div class="row mt-3 aos-item">
-          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 col">
-            <div class="service-box">
-              <div class="skill-ico">
-                <span class="icon"><img src="assets/img/html.png" alt="HTML" class="w-100"></span>
-              </div>
-              <div class="service-content">
-                <h3 class="s-title text-white fw-bold">HTML</h3>
-              </div>
-            </div>
-          </div><!--end col1-->
-
-          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 col">
-            <div class="service-box">
-              <div class="skill-ico">
-                <span class="icon"><img src="assets/img/css.png" alt="HTML" class="w-100"></span>
-              </div>
-              <div class="service-content">
-                <h3 class="s-title text-white fw-bold">CSS</h3>
-              </div>
-            </div>
-          </div><!--end col2--> 
-
-          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 col">
-            <div class="service-box">
-              <div class="skill-ico">
-                <span class="icon"><img src="assets/img/jquery.webp" alt="HTML" class="w-100"></span>
-              </div>
-              <div class="service-content">
-                <h3 class="s-title text-white fw-bold">Jquery</h3>
-              </div>
-            </div>
-          </div><!--end col3-->
-
-          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 col">
-            <div class="service-box">
-              <div class="skill-ico">
-                <span class="icon"><img src="assets/img/bootstrap.png" alt="HTML" class="w-100"></span>
-              </div>
-              <div class="service-content">
-                <h3 class="s-title text-white fw-bold">Bootstrap</h3>
-              </div>
-            </div>
-          </div><!--end col3-->
-
-           <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 col">
-            <div class="service-box">
-              <div class="skill-ico">
-                <span class="icon"><img src="assets/img/photoshop.png" alt="HTML" class="w-100"></span>
-              </div>
-              <div class="service-content">
-                <h3 class="s-title text-white fw-bold">Photoshop</h3>
-              </div>
-            </div>
-          </div><!--end col4-->
-
-          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 col">
-            <div class="service-box">
-              <div class="skill-ico">
-                <span class="icon"><img src="assets/img/wordpress.png" alt="HTML" class="w-100"></span>
-              </div>
-              <div class="service-content">
-                <h3 class="s-title text-white fw-bold">Wordpress</h3>
-              </div>
-            </div>
-          </div><!--end col5-->
-
-          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 col">
-            <div class="service-box">
-              <div class="skill-ico">
-                <span class="icon"><img src="assets/img/shopify.png" alt="HTML" class="w-100"></span>
-              </div>
-              <div class="service-content">
-                <h3 class="s-title text-white fw-bold">Shopfy</h3>
-              </div>
-            </div>
-          </div><!--end col6-->
-
-          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 col">
-            <div class="service-box">
-              <div class="skill-ico">
-                <span class="icon"><img src="assets/img/wix.png" alt="HTML" class="w-100"></span>
-              </div>
-              <div class="service-content">
-                <h3 class="s-title text-white fw-bold">Wix</h3>
-              </div>
-            </div>
-          </div><!--end col7-->
-
-          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 col">
-            <div class="service-box">
-              <div class="skill-ico">
-                <span class="icon"><img src="assets/img/hubspot.png" alt="HTML" class="w-100"></span>
-              </div>
-              <div class="service-content">
-                <h3 class="s-title text-white fw-bold">Hubspot</h3>
-              </div>
-            </div>
-          </div><!--end col8-->
-
-          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 col">
-            <div class="service-box">
-              <div class="skill-ico">
-                <span class="icon"><img src="assets/img/sass.png" alt="HTML" class="w-100"></span>
-              </div>
-              <div class="service-content">
-                <h3 class="s-title text-white fw-bold">Sass</h3>
-              </div>
-            </div>
-          </div><!--end col9-->
-
-          <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 col">
-            <div class="service-box">
-              <div class="skill-ico">
-                <span class="icon"><img src="assets/img/accessibility-disablity.png" alt="HTML" class="w-100"></span>
-              </div>
-              <div class="service-content">
-                <h3 class="s-title text-white fw-bold">Accessibility</h3>
-              </div>
-            </div>
-          </div><!--end col10-->
-
-           <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12 col">
-            <div class="service-box">
-              <div class="skill-ico">
-                <span class="icon"><img src="assets/img/email-temp.png" alt="HTML" class="w-100"></span>
-              </div>
-              <div class="service-content">
-                <h3 class="s-title text-white fw-bold">Email HTML</h3>
-              </div>
-            </div>
-          </div><!--end col11-->
-          
+          <div class="tl" id="exp" role="tabpanel" aria-labelledby="tab-exp" tabindex="0">
+            <article class="tl-item"><div class="tl-card"><div class="tl-top"><span class="tl-date"><i class="live"></i>July 2024 - Present</span><span class="tl-ico"><i class="bi bi-briefcase"></i></span></div><h3 class="tl-title">Senior Project Engineer</h3><p class="tl-org">CDAC Noida</p></div></article>
+            <article class="tl-item"><div class="tl-card"><div class="tl-top"><span class="tl-date">Apirl 2022-July 2024</span><span class="tl-ico"><i class="bi bi-briefcase"></i></span></div><h3 class="tl-title">Project Engineer</h3><p class="tl-org">CDAC Noida</p></div></article>
+            <article class="tl-item"><div class="tl-card"><div class="tl-top"><span class="tl-date">Sept. 2018-March 2022</span><span class="tl-ico"><i class="bi bi-briefcase"></i></span></div><h3 class="tl-title">Senior Website/HTML Designer</h3><p class="tl-org">Webutopian Technology Private Limited</p></div></article>
+            <article class="tl-item"><div class="tl-card"><div class="tl-top"><span class="tl-date">April 2018-Sept 2018</span><span class="tl-ico"><i class="bi bi-briefcase"></i></span></div><h3 class="tl-title">Senior Website/HTML Designer</h3><p class="tl-org">Auspicious Soft Private Limited</p></div></article>
+            <article class="tl-item"><div class="tl-card"><div class="tl-top"><span class="tl-date">Nov. 2016-March 2022</span><span class="tl-ico"><i class="bi bi-briefcase"></i></span></div><h3 class="tl-title">Junior Website/Graphic Designer</h3><p class="tl-org">Matrix Infologics Private Limited</p></div></article>
+          </div>
+          <div class="tl" id="edu" role="tabpanel" aria-labelledby="tab-edu" tabindex="0" hidden>
+            <article class="tl-item"><div class="tl-card"><div class="tl-top"><span class="tl-date">2014-2016</span><span class="tl-ico"><i class="bi bi-mortarboard"></i></span></div><h3 class="tl-title">Emax Group of institution Ambala Cantt Haryana</h3><p class="tl-org">Master of Computer Application (MCA)</p></div></article>
+            <article class="tl-item"><div class="tl-card"><div class="tl-top"><span class="tl-date">2011-2014</span><span class="tl-ico"><i class="bi bi-mortarboard"></i></span></div><h3 class="tl-title">ITFT Collage Chandigarh</h3><p class="tl-org">Bachelor of Computer Application</p></div></article>
+            <article class="tl-item"><div class="tl-card"><div class="tl-top"><span class="tl-date">2008-2010</span><span class="tl-ico"><i class="bi bi-mortarboard"></i></span></div><h3 class="tl-title">10+2 Non Medical</h3><p class="tl-org">GSSS Tang Narwana</p></div></article>
+            <article class="tl-item"><div class="tl-card"><div class="tl-top"><span class="tl-date">2003-2007</span><span class="tl-ico"><i class="bi bi-mortarboard"></i></span></div><h3 class="tl-title">10<sup>th</sup></h3><p class="tl-org">GHS Jadrangal</p></div></article>
+          </div>
         </div>
       </div>
-    </section><!-- End Services Section -->
+    </section>
 
-     <!-- =======my Recent Projects ======= -->
-    <!-- <section id="skills" class="skill-mf route bg-img" style="background-image: url(assets/img/recent_pro-img.jpg);">
+    <section id="skills" class="section section-soft">
       <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="title-box text-center">
-              <h2 class="text-white">
-               <span> My </span>Recent Projects
-              </h2>
-              <p class="text-white">Some Sample List of my Recent Projects</p>
-              <div class="line-mf"></div>
-            </div>
-          </div>
-        </div>
-        <div class="row mt-3 aos-item">
-          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 col">
-            <div class="service-box">
-               <div class="skill-ico">
-                <span class="icon"><img src="assets/img/iveda.png" alt="Integrated Validation of export Drug and its Authentication" class="w-100"></span>
-              </div>
-              <div class="service-content">
-                <h3 class="s-title text-white fw-bold">iVEDA (Integrated Validation of export Drug and its Authentication)</h3>
-                <p class="text-white">iVEDA is well refined & built in system. It simply means to track, trace and authenticate the Indian Drugs which is  exported from India.</p>
-              </div>
-            </div>
-          </div><!--end col1--
-
-          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 col">
-            <div class="service-box">
-              <div class="skill-ico">
-                <span class="icon"><img src="assets/img/eBIS.png" alt="Bureau of Indian Standards" class="w-100"></span>
-              </div>
-              <div class="service-content">
-                <h3 class="s-title text-white fw-bold">eBIS (Bureau of Indian Standards)</h3>
-                <p class="text-white">
-                  eBIS is integrated Web Portal in which manufacturer apply for license to get BIS certification. like Hallmarking, ISI mark etc.
-                </p>
-              </div>
-            </div>
-          </div><!--end col2--
-
-          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 col">
-            <div class="service-box">
-              <div class="skill-ico">
-                <span class="icon"><img src="assets/img/adip.png" alt="Assistance to Disabled Person for Purchase/Fitting of Aids and Appliances (ADIP)" class="w-100"></span>
-              </div>
-              <div class="service-content">
-                <h3 class="s-title text-white fw-bold">ADIP (Assistance to Disabled Person for Purchase/Fitting of Aids and Appliances)</h3>
-                <p class="text-white">Its main aim aims to facilitate empowerment of the persons with disabilities and acts as a nodal agency to look after all development agenda of Persons with Disabilities (Divyangjan).</p>
-              </div>
-            </div>
-          </div><!--end col3--
-
-          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 col">
-            <div class="service-box">
-              <div class="skill-ico">
-                <span class="icon"><img src="assets/img/bootstrap.png" alt="HTML" class="w-100"></span>
-              </div>
-              <div class="service-content">
-                <h3 class="s-title text-white fw-bold">Bootstrap</h3>
-              </div>
-            </div>
-          </div><!--end col3--
-
-           <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 col">
-            <div class="service-box">
-              <div class="skill-ico">
-                <span class="icon"><img src="assets/img/photoshop.png" alt="HTML" class="w-100"></span>
-              </div>
-              <div class="service-content">
-                <h3 class="s-title text-white fw-bold">Photoshop</h3>
-              </div>
-            </div>
-          </div><!--end col4--
-        </div>
+        <div class="section-head reveal"><h2>My Skills</h2></div>
+        <ul class="skills-grid reveal" aria-label="Skills">
+          <li><div class="skill"><img src="assets/img/html.png" alt="HTML5">HTML5</div></li>
+          <li><div class="skill"><img src="assets/img/css.png" alt="CSS3">CSS3</div></li>
+          <li><div class="skill"><img src="assets/img/photoshop.png" alt="Photoshop">Photoshop</div></li>
+          <li><div class="skill"><img src="assets/img/figma.svg" alt="Figma">Figma</div></li>
+          <li><div class="skill"><img src="assets/img/bootstrap.png" alt="Bootstrap">Bootstrap</div></li>
+          <li><div class="skill"><img src="assets/img/React.svg" alt="React">React</div></li>
+          <li><div class="skill"><img src="assets/img/mui.svg" alt="Material UI">Material UI</div></li>
+          <li><div class="skill"><img src="assets/img/Tailwind.png" alt="Tailwind CSS">Tailwind CSS</div></li>
+          <li><div class="skill"><img src="assets/img/wordpress.png" alt="WordPress">WordPress</div></li>
+          <li><div class="skill"><img src="assets/img/shopify.png" alt="Shopify">Shopify</div></li>
+          <li><div class="skill"><img src="assets/img/hubspot.png" alt="HubSpot">HubSpot</div></li>
+          <li><div class="skill"><img src="assets/img/wix.png" alt="Wix">Wix</div></li>
+          <li><div class="skill"><img src="assets/img/sass.png" alt="Sass">Sass</div></li>
+          <li><div class="skill"><img src="assets/img/accessibility-disablity.png" alt="Web Accessibility">Web Accessibility</div></li>
+          <li><div class="skill"><img src="assets/img/java.svg" alt="Java">Java</div></li>
+        </ul>
       </div>
-    </section> --><!-- End Recent Projects -->
+    </section>
 
-    <!-- ======= Portfolio Section ======= -->
-    <!-- Portfolio/Works section --> 
-    <section class="site-section section-works bg-darkgray bg-img" id="work">
-        <div class="container">
-          <div class="row">
-                  <div class="col-sm-12">
-                    <div class="title-box text-center">
-                      <h2 class="text-white">
-                        My <span> Previous Work</span>
-                      </h2>
-                      <p class="subtitle-a text-white">
-                        Know more about my work
-                      </p>
-                      <div class="line-mf"></div>
-                    </div>
-                  </div>
-            </div>
-            <!-- Isotope menu -->
-          <div class="container_menu_iso">
-            <div class="row aos-item">
-              <div class="col-sm-12">
-                <div class="menu_iso" id="custom-filter">
-                  <li>
-                    <a data-filter="*">All</a>
-                  </li>
-                  <li>
-                    <a data-filter=".item1">Recent project</a>
-                  </li>
-                  <li>
-                    <a data-filter=".item3">App Design</a>
-                  </li>
-                  <li>
-                    <a data-filter=".item2">Mockup Design</a>
-                  </li>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Isotope Gallery -->
-          <div class="container container_gallery_iso">
-            <div class="row iso-container">
-
-              <!-- item1=1blue|| item2=red || item3=pink -->
-
-              <!-- ----1---- -->
-              <div class="col-lg-3 col-md-4 com-sm-6 col-xs-12 col cent isotope-item item1">
-                <div class="img_iso blu1 bg-img">
-                  <div class="overlay">
-                    <a href="https://scall.ch/" class="text btn-5 btn btn-primary"  role="button" target="_blank">Scall</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-lg-3 col-md-4 com-sm-6 col-xs-12 col  cent isotope-item item2">
-                <div class="img_iso red1 bg-img">
-                  <div class="overlay">
-                     <a href="assets/img/mockups/business-consulting.jpg" class="text btn-5 btn btn-primary"  role="button" target="_blank">Business Consulting</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-lg-3 col-md-4 com-sm-6 col-xs-12 col cent isotope-item item3">
-                <div class="img_iso pink1 bg-img">
-                  <div class="overlay">
-                    <a href="assets/img/app/chalist1t.jpg" class="text btn-5 btn btn-primary"  role="button" target="_blank">Screen 1</a>
-                  </div>
-                </div>
-              </div>
-
-              <!-- -----2----- -->
-              <div class="col-lg-3 col-md-4 com-sm-6 col-xs-12 col cent isotope-item item2">
-                <div class="img_iso red2 bg-img">
-                  <div class="overlay">
-                     <a href="assets/img/mockups/Tricountypress-Mockup.jpg" class="text btn-5 btn btn-primary"  role="button" target="_blank">Tricountypress</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-lg-3 col-md-4 com-sm-6 col-xs-12 col cent isotope-item item3">
-                <div class="img_iso pink2 bg-img">
-                  <div class="overlay">
-                     <a href="assets/img/app/newsfeed2.jpg" class="text btn-5 btn btn-primary"  role="button" target="_blank">Screen 2</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-lg-3 col-md-4 com-sm-6 col-xs-12 col cent isotope-item item1">
-                <div class="img_iso blu2 bg-img">
-                  <div class="overlay">   
-                    <a href="https://wiio.io/" class="text btn-5 btn btn-primary"  role="button" target="_blank">Wiio</a>
-                  </div>
-                </div>
-              </div>
-
-              <!-- ----3--- -->
-
-              <div class="col-lg-3 col-md-4 com-sm-6 col-xs-12 col cent isotope-item item1">
-                <div class="img_iso blu3 bg-img">
-                  <div class="overlay">
-                    <a href="https://bodybeyondbirth.com/" class="text btn-5 btn btn-primary"  role="button" target="_blank">BBB</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-lg-3 col-md-4 com-sm-6 col-xs-12 col cent isotope-item item3">
-                <div class="img_iso pink3 bg-img">
-                  <div class="overlay">
-                     <a href="assets/img/app/search1.jpg" class="text btn-5 btn btn-primary"  role="button" target="_blank">Screen 3</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-lg-3 col-md-4 com-sm-6 col-xs-12 col cent isotope-item item2">
-                <div class="img_iso red3 bg-img">
-                  <div class="overlay">
-                     <a href="assets/img/mockups/berinices.jpg" class="text btn-5 btn btn-primary"  role="button" target="_blank">berinices</a>
-                  </div>
-                </div>
-              </div>
-
-              <!-- ----4------ -->
-
-              <div class="col-lg-3 col-md-4 com-sm-6 col-xs-12 col cent isotope-item item3">
-                <div class="img_iso pink4 bg-img">
-                  <div class="overlay">
-                     <a href="assets/img/app/profile-min.jpg" class="text btn-5 btn btn-primary"  role="button" target="_blank">Screen 4</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-lg-3 col-md-4 com-sm-6 col-xs-12 col cent isotope-item item2">
-                <div class="img_iso red4 bg-img">
-                  <div class="overlay">
-                     <a href="assets/img/mockups/mindpumpmedia-new.jpg" class="text btn-5 btn btn-primary"  role="button" target="_blank">mindpumpmedia</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-lg-3 col-md-4 com-sm-6 col-xs-12 col cent isotope-item item1">
-                <div class="img_iso blu4 bg-img">
-                  <div class="overlay">
-                    <a href="https://company21.ch/" class="text btn-5 btn btn-primary"  role="button" target="_blank">Company21</a>
-                  </div>
-                </div>
-              </div>
-
-              <!-- ----5------ -->
-
-              <div class="col-lg-3 col-md-4 com-sm-6 col-xs-12 col cent isotope-item item2">
-                <div class="img_iso red5 bg-img">
-                  <div class="overlay">
-                     <a href="assets/img/mockups/freight.jpg" class="text btn-5 btn btn-primary"  role="button" target="_blank">Freight</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-lg-3 col-md-4 com-sm-6 col-xs-12 col cent isotope-item item1">
-                <div class="img_iso blu5 bg-img">
-                  <div class="overlay">
-                    <a href="https://wut-wp-templates.com/environment/" class="text btn-5 btn btn-primary"  role="button" target="_blank">Enviroment</a>
-                  </div>
-                </div>
-              </div>
-
-                <!-- ----6------ -->
-              <div class="col-lg-3 col-md-4 com-sm-6 col-xs-12 col cent isotope-item item2">
-                <div class="img_iso red6 bg-img">
-                  <div class="overlay">
-                     <a href="assets/img/mockups/PEST-CONTROL.jpg" class="text btn-5 btn btn-primary"  role="button" target="_blank">Pest Control</a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-lg-3 col-md-4 com-sm-6 col-xs-12 col cent isotope-item item1">
-                <div class="img_iso blu6 bg-img">
-                  <div class="overlay">
-                    <a href="http://wut-wp-templates.com/gotrip/" class="text btn-5 btn btn-primary"  role="button" target="_blank">Go Trip</a>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-          </div>
-        </div>
-        </section>
-      <!-- End Portfolio Section -->
-
-    
-
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="footer-paralax bg-image sect-mt4 route bg-img" style="background-image:url(assets/img/services-banner.jpg);">
-      <div class="overlay-mf"></div>
+    <section id="work" class="section">
       <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="contact-mf">
-              <div id="contact">
-                <div class="row">
-                  <div class="col-md-6 p-0 aos-item" data-aos="fade-down">
-                    <figure>
-                      <img src="assets/img/office-pic1.jpg" alt="Contact office image" class="w-100">
-                    </figure>
-                  <div>
-                     
-                    </div>
-                  </div>
-                  <div class="col-md-6 p-0 aos-item" data-aos="fade-down">
-                    <div class="contact-info d-flex align-items-center h-100">
-                    <div class="get-touch">
-                    <div class="title-box pt-4 pt-md-0">
-                      <h2 class="text-white title-left">
-                        Get in <span>Touch</span>
-                       
-                      </h2>
-
-                    </div>
-                    <div class="more-info">
-                       <p class="lead text-white">
-                        I help to create websites, and grow your business. If you have a project that you want to get started  then let's get this conversation started. I am available 24/7 by email, I am get in touch as soon i can.
-                      </p>
-                      <ul class="list-ico">
-                        <li class="text-white"><span class="bi bi-geo-alt"></span> Dharamshala Himachal Pradesh-176052</li>
-                        <li class="text-white"><a href="mailto:kamanawebdesigner@gmail.com" class="text-white"><span class="bi bi-envelope"></span> kamanawebdesigner@gmail.com</a></li>
-                      </ul>
-                    </div>
-                    <div class="socials">
-                     <ul>
-                         <li><a href="https://www.linkedin.com/in/kamana-sharma-80149195/" target="_blank" >
-                          <span class="ico-circle"><i class="bi bi-linkedin"aria-hidden="true"></i> <span class="sr-only">Linked In</span></span>
-                        </a></li>
-                        <li><a href="https://www.facebook.com/kamana.bhatt.3" target="_blank" >
-                          <span class="ico-circle"><i class="bi bi-facebook"aria-hidden="true"></i><span class="sr-only">Facebook</span></span>
-                        </a></li>
-                        <li><a href="https://www.instagram.com/kamanaasharma/" target="_blank" >
-                          <span class="ico-circle"><i class="bi bi-instagram"aria-hidden="true"></i><span class="sr-only">Instagram</span></span>
-                        </a></li>
-                        <li><a href="https://twitter.com/kamanabhatt" target="_blank" >
-                          <span class="ico-circle"><i class="bi bi-twitter"aria-hidden="true"></i><span class="sr-only">Twitter</span></span>
-                        </a></li>
-                      </ul>
-                    </div>
-                  </div>
-                  </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+        <div class="section-head reveal"><h2>My Previous Work</h2></div>
+        <div class="filters reveal" role="group" aria-label="Filter work">
+          <button class="filter active" data-filter="*" aria-pressed="true">All</button>
+          <button class="filter" data-filter="item1" aria-pressed="false">Recent project</button>
+          <button class="filter" data-filter="item3" aria-pressed="false">App Design</button>
+          <button class="filter" data-filter="item2" aria-pressed="false">Mockup Design</button>
+        </div>
+        <div class="work-wrap">
+          <div class="work-list">
+          <a class="work-row item1" href="https://scall.ch/" target="_blank" rel="noopener" data-name="Scall" data-tag="Recent project"><span class="thumb">S</span><span class="w-name">Scall</span><span class="w-tag">Recent project</span><i class="bi bi-arrow-up-right"></i></a>
+          <a class="work-row item2" href="assets/img/mockups/business-consulting.jpg" target="_blank" data-name="Business Consulting" data-tag="Mockup Design" data-img="assets/img/mockups/business-consulting.jpg"><span class="thumb"><img src="assets/img/mockups/business-consulting.jpg" alt="" loading="lazy"></span><span class="w-name">Business Consulting</span><span class="w-tag">Mockup Design</span><i class="bi bi-arrow-up-right"></i></a>
+          <a class="work-row item3" href="assets/img/app/chalist1t.jpg" target="_blank" data-name="Screen 1" data-tag="App Design" data-img="assets/img/app/chalist1t.jpg"><span class="thumb"><img src="assets/img/app/chalist1t.jpg" alt="" loading="lazy"></span><span class="w-name">Screen 1</span><span class="w-tag">App Design</span><i class="bi bi-arrow-up-right"></i></a>
+          <a class="work-row item2" href="assets/img/mockups/Tricountypress-Mockup.jpg" target="_blank" data-name="Tricountypress" data-tag="Mockup Design" data-img="assets/img/mockups/Tricountypress-Mockup.jpg"><span class="thumb"><img src="assets/img/mockups/Tricountypress-Mockup.jpg" alt="" loading="lazy"></span><span class="w-name">Tricountypress</span><span class="w-tag">Mockup Design</span><i class="bi bi-arrow-up-right"></i></a>
+          <a class="work-row item3" href="assets/img/app/newsfeed2.jpg" target="_blank" data-name="Screen 2" data-tag="App Design" data-img="assets/img/app/newsfeed2.jpg"><span class="thumb"><img src="assets/img/app/newsfeed2.jpg" alt="" loading="lazy"></span><span class="w-name">Screen 2</span><span class="w-tag">App Design</span><i class="bi bi-arrow-up-right"></i></a>
+          <a class="work-row item1" href="https://wiio.io/" target="_blank" rel="noopener" data-name="Wiio" data-tag="Recent project"><span class="thumb">W</span><span class="w-name">Wiio</span><span class="w-tag">Recent project</span><i class="bi bi-arrow-up-right"></i></a>
+          <a class="work-row item1" href="https://bodybeyondbirth.com/" target="_blank" rel="noopener" data-name="BBB" data-tag="Recent project"><span class="thumb">B</span><span class="w-name">BBB</span><span class="w-tag">Recent project</span><i class="bi bi-arrow-up-right"></i></a>
+          <a class="work-row item3" href="assets/img/app/search1.jpg" target="_blank" data-name="Screen 3" data-tag="App Design" data-img="assets/img/app/search1.jpg"><span class="thumb"><img src="assets/img/app/search1.jpg" alt="" loading="lazy"></span><span class="w-name">Screen 3</span><span class="w-tag">App Design</span><i class="bi bi-arrow-up-right"></i></a>
+          <a class="work-row item2" href="assets/img/mockups/berinices.jpg" target="_blank" data-name="berinices" data-tag="Mockup Design" data-img="assets/img/mockups/berinices.jpg"><span class="thumb"><img src="assets/img/mockups/berinices.jpg" alt="" loading="lazy"></span><span class="w-name">berinices</span><span class="w-tag">Mockup Design</span><i class="bi bi-arrow-up-right"></i></a>
+          <a class="work-row item3" href="assets/img/app/profile-min.jpg" target="_blank" data-name="Screen 4" data-tag="App Design" data-img="assets/img/app/profile-min.jpg"><span class="thumb"><img src="assets/img/app/profile-min.jpg" alt="" loading="lazy"></span><span class="w-name">Screen 4</span><span class="w-tag">App Design</span><i class="bi bi-arrow-up-right"></i></a>
+          <a class="work-row item2" href="assets/img/mockups/mindpumpmedia-new.jpg" target="_blank" data-name="mindpumpmedia" data-tag="Mockup Design" data-img="assets/img/mockups/mindpumpmedia-new.jpg"><span class="thumb"><img src="assets/img/mockups/mindpumpmedia-new.jpg" alt="" loading="lazy"></span><span class="w-name">mindpumpmedia</span><span class="w-tag">Mockup Design</span><i class="bi bi-arrow-up-right"></i></a>
+          <a class="work-row item1" href="https://company21.ch/" target="_blank" rel="noopener" data-name="Company21" data-tag="Recent project"><span class="thumb">C</span><span class="w-name">Company21</span><span class="w-tag">Recent project</span><i class="bi bi-arrow-up-right"></i></a>
+          <a class="work-row item2" href="assets/img/mockups/freight.jpg" target="_blank" data-name="Freight" data-tag="Mockup Design" data-img="assets/img/mockups/freight.jpg"><span class="thumb"><img src="assets/img/mockups/freight.jpg" alt="" loading="lazy"></span><span class="w-name">Freight</span><span class="w-tag">Mockup Design</span><i class="bi bi-arrow-up-right"></i></a>
+          <a class="work-row item1" href="https://wut-wp-templates.com/environment/" target="_blank" rel="noopener" data-name="Enviroment" data-tag="Recent project"><span class="thumb">E</span><span class="w-name">Enviroment</span><span class="w-tag">Recent project</span><i class="bi bi-arrow-up-right"></i></a>
+          <a class="work-row item2" href="assets/img/mockups/PEST-CONTROL.jpg" target="_blank" data-name="Pest Control" data-tag="Mockup Design" data-img="assets/img/mockups/PEST-CONTROL.jpg"><span class="thumb"><img src="assets/img/mockups/PEST-CONTROL.jpg" alt="" loading="lazy"></span><span class="w-name">Pest Control</span><span class="w-tag">Mockup Design</span><i class="bi bi-arrow-up-right"></i></a>
+          <a class="work-row item1" href="http://wut-wp-templates.com/gotrip/" target="_blank" rel="noopener" data-name="Go Trip" data-tag="Recent project"><span class="thumb">G</span><span class="w-name">Go Trip</span><span class="w-tag">Recent project</span><i class="bi bi-arrow-up-right"></i></a>
           </div>
+          <aside class="work-preview" aria-label="Project preview">
+            <a class="pv" id="pv-link" href="#" target="_blank" rel="noopener">
+              <div class="pv-bar"><i></i><i></i><i></i><span id="pv-url"></span></div>
+              <div class="pv-body" id="pv-body"><img id="pv-img" alt=""><div class="pv-site" id="pv-site"></div></div>
+              <div class="pv-foot"><span id="pv-tag"></span><span>Open project <i class="bi bi-arrow-up-right"></i></span></div>
+            </a>
+          </aside>
         </div>
       </div>
-    </section><!-- End Contact Section -->
+    </section>
 
-  </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="copyright-box">
-            <p class="copyright">© Copyright. All Rights Reserved By Kamana Sharma</p>
+    <section id="contact" class="section section-dark">
+      <div class="bg-fx" aria-hidden="true"><span class="orb o1"></span><span class="orb o2"></span><i class="shape ring"></i><i class="shape ring2"></i><i class="shape plus"></i><i class="shape plus p2"></i><i class="shape sq"></i></div>
+      <div class="container contact-grid">
+        <div class="reveal">
+          <h2>Get in Touch</h2>
+          <p>I help to create websites, and grow your business. If you have a project that you want to get started  then let's get this conversation started. I am available 24/7 by email, I am get in touch as soon i can.</p>
+          <a class="mail" href="mailto:kamanawebdesigner@gmail.com">kamanawebdesigner@gmail.com</a>
+          <button class="ctrl ctrl-copy" type="button" data-copy="kamanawebdesigner@gmail.com"><i class="bi bi-copy"></i><span>Copy email</span></button>
+          <div class="contact-meta">
+            <span><i class="bi bi-geo-alt pin"></i> Dharamshala Himachal Pradesh-176052</span>
+            <a class="btn btn-primary" href="https://www.linkedin.com/in/kamana-sharma-80149195/" target="_blank" rel="noopener"><i class="bi bi-linkedin"></i> Linked In</a>
           </div>
         </div>
+        <div class="contact-photo reveal"><img src="assets/img/office-pic1.jpg" alt="Contact office image"></div>
       </div>
-    </div>
-  </footer><!-- End  Footer -->
+    </section>
+  </main>
 
-  <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"> <span class="sr-only">Back to top</span></i></a>
-<div class="cursor"></div>
-  <!-- Vendor JS Files -->
-
-  <script src="assets/vendor/typed.js/typed.min.js"></script>
-  <script src="assets/vendor/aos/js/aos.js"></script>
-
-  <!-- Template Main JS File -->
-   <script src="assets/js/jquery.min.js"></script>
-   <script src="assets/js/main.js"></script>
-   <script src="assets/js/popper.min.js"></script>
-   <script src="assets/js/isotope.pkgd.js"></script>
+  <footer class="footer"><div class="container"><p>© Copyright. All Rights Reserved By Kamana</p></div></footer>
+  <div class="palette" hidden role="dialog" aria-modal="true" aria-label="Quick navigation">
+    <div class="palette-box"><input id="pal-input" type="text" placeholder="Jump to a section or action..." autocomplete="off" aria-label="Search"><ul id="pal-list"></ul></div>
+  </div>
+  <div class="toast" role="status" aria-live="polite"></div>
+  <a href="#hero" class="to-top" aria-label="Back to top"><i class="bi bi-arrow-up-short"></i></a>
+  <script src="assets/js/main.js?v=4"></script>
 </body>
-
 </html>
